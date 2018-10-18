@@ -8,9 +8,11 @@ module.exports = (axios) => {
     // set default retry times
     if (!config.retry) config.retry = 3;
 
+    // get error code or status
+    let errCode = err.code || (err.response && err.response.status);
     // check retryCode
-    if (config.retryCode && config.retryCode.length > 0 && !config.retryCode.includes(err.code)) {
-      console.log('不需要重试');
+    if (config.retryCode && config.retryCode.length > 0 && !config.retryCode.includes(errCode)) {
+      console.log('errCode', errCode);
       return Promise.reject(err);
     }
   
@@ -29,7 +31,7 @@ module.exports = (axios) => {
     // Return the promise in which recalls axios to retry the request
     return backoff.then(() => {
       // run retryBeforeFn before request
-      if (config.retryBeforeFn) config.retryBeforeFn(config);
+      if (config.retryBeforeFn) config.retryBeforeFn(err);
       return axios(config);
     });
   });

@@ -8,7 +8,7 @@
     "url": "https://github.com/phantomk/axios-retry-tiny.git"
   },
   "scripts": {
-    "test": "node ./test/test"
+    "test": "mocha"
   },
   "keywords": [
     "axios",
@@ -16,7 +16,9 @@
   ],
   "author": "phantomk",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.18.0"
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.1"
   }
 }

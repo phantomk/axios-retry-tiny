@@ -40,12 +40,14 @@ artiny(axios);
 
 ### retryCode list
 
-| code           | type   | desc         |
-|----------------|--------|--------------|
-| 'ECONNABORTED' | string | timeout      |
-| 'ETIMEDOUT'    | string | timeout      |
-| 4**            | number | client error |
-| 5**            | number | server error |
+| code           | type   | desc             |
+|----------------|--------|------------------|
+| 'ECONNABORTED' | string | timeout          |
+| 'ETIMEDOUT'    | string | timeout          |
+| 'ENOTFOUND'    | string | server not found |
+| 'ENETUNREACH'  | string | not reach        |
+| 4**            | number | client error     |
+| 5**            | number | server error     |
 
 ## Thinks
 Happy to thinks
