@@ -1,0 +1,22 @@
+{
+  "name": "axios-retry-tiny",
+  "version": "0.0.1",
+  "description": "a tiny interceptor for axios to retry request",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phantomk/axios-retry-tiny.git"
+  },
+  "scripts": {
+    "test": "node ./test/test"
+  },
+  "keywords": [
+    "axios",
+    "retry"
+  ],
+  "author": "phantomk",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
