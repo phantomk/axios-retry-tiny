@@ -4,6 +4,12 @@ a tiny interceptor for axios to retry request
 
 ## Install
 
+```bash
+npm i axios-retry-tiny --save
+# or use yarn
+yarn add axios-retry-tiny
+```
+
 ## Use
 
 ```javascript
