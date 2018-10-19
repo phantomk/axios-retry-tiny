@@ -1,6 +1,9 @@
 # axios-retry-tiny
 
-a tiny interceptor for axios to retry request
+![npm-veriosn](https://img.shields.io/npm/v/axios-retry-tiny.svg)
+![npm-dt](https://img.shields.io/npm/dt/axios-retry-tiny.svg)
+
+A tiny interceptor for axios to retry request
 
 ## Install
 
@@ -59,3 +62,6 @@ artiny(axios);
 Happy to thinks
 - [axios issus #164](https://github.com/axios/axios/issues/164#issuecomment-327837467)
 - [JustinBeckwith/retry-axios](https://github.com/JustinBeckwith/retry-axios)
+
+## License
+[Apache-2.0](LICENSE)
