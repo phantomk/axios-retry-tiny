@@ -1,6 +1,6 @@
 {
   "name": "axios-retry-tiny",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a tiny interceptor for axios to retry request",
   "main": "index.js",
   "repository": {

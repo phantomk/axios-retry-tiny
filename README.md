@@ -1,5 +1,6 @@
 # axios-retry-tiny
 
+[![CircleCI](https://circleci.com/gh/phantomk/axios-retry-tiny/tree/master.svg?style=svg)](https://circleci.com/gh/phantomk/axios-retry-tiny/tree/master)
 ![npm-veriosn](https://img.shields.io/npm/v/axios-retry-tiny.svg)
 ![npm-dt](https://img.shields.io/npm/dt/axios-retry-tiny.svg)
 
