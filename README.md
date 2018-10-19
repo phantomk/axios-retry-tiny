@@ -25,8 +25,8 @@ artiny(axios);
       retry: 5,
       retryDelay: 100,
       retryCode: ['ECONNABORTED', 'ETIMEDOUT', 500],
-      retryBeforeFn: (config) => {
-        console.log(`retry #${config.__retryCount}: ${config.url}`);
+      retryBeforeFn: (e) => {
+        console.log(`retry #${e.config.__retryCount}: ${e.config.url} : errCode: ${e.code || (e.response && e.response.status)}`);
       }
     });
   } catch (error) {
