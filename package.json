@@ -1,6 +1,6 @@
 {
   "name": "axios-retry-tiny",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a tiny interceptor for axios to retry request",
   "main": "index.js",
   "repository": {
@@ -15,7 +15,7 @@
     "retry"
   ],
   "author": "phantomk",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "axios": "^0.18.0",
     "mocha": "^5.2.0",
